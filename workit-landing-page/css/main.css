@@ -1,0 +1,274 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+  padding:0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root {
+  /*colors*/
+  --dark-blue:#24053E;
+  --eucalyptus:#44FFA1;
+  --grey:#584D62;
+  --light-white:#FCF8FF;
+  --white:#FFF;
+  /*typography*/
+  --Heading-L-font-family: 'Fraunces', serif;
+  --Heading-L-font-weight: 600;
+  --Heading-L-font-size: 5rem;
+  --Heading-L-line-height: 1;
+
+  --Heading-M-font-family: 'Fraunces', serif;
+  --Heading-M-font-weight: 600;
+  --Heading-M-font-size: 3.5rem;
+  --Heading-M-line-height: 1.14;
+
+  --Heading-S-font-family: 'Fraunces', serif;
+  --Heading-S-font-weight: 600;
+  --Heading-S-font-size: 2rem;
+  --Heading-S-line-height: 1.25;
+
+  --body-font-family:'Manrope', serif;
+  --body-font-weight:400;
+  --body-font-size:1.125rem;
+  --body-line-height:1.77;
+
+
+}
+body{
+  font-family: 'Manrope', serif;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.wrapper{
+  position: relative;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem 4rem 1rem;
+  background-color: #24053E;
+}
+
+.button__1 {
+  color:var(--white);
+  font-weight: bold;
+  text-decoration: underline #44FFA1 3px;
+  text-underline-offset: 8px;
+}
+/*EERSTE DEEL*/
+.hero__section {
+  text-align: center;
+  padding: 0 1rem 10.54rem 1rem;
+  background-color: #24053E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 40% 10%;
+  border-bottom-right-radius: 40% 10%;
+}
+
+.title {
+  font-family: 'Fraunces', serif;
+  font-size: 3.125rem;
+  font-weight: 600;
+  line-height: 1;
+  color:var(--white);
+}
+
+.tailored {
+  text-decoration: underline #44FFA1 3px;
+  text-underline-offset: 8px;
+}
+
+.button__2 {
+  display: inline-block;
+  min-width: 8.3125rem;
+  background-color: var(--eucalyptus);
+  color: var(--dark-blue);
+  font-weight: bold;
+  padding:0.6875rem 1.5rem;
+  margin-block-start: 2.5rem;
+}
+
+.hero__picture {
+  max-width: 320px;
+  position: absolute;
+  top:400px;
+}
+
+.number {
+  font-family: 'Fraunces', serif;
+  font-size: 1.25rem;
+  border: var(--grey) solid 1px;
+  border-radius: 50%;
+  height: 46px;
+  width:48px;
+  text-align: center;
+  padding-top: 5px;
+  color: var(--dark-blue);
+  margin: 0 auto;
+}
+
+/*TWEEDE DEEL*/
+.reasons__section {
+  border-bottom-left-radius: 20% 5%;
+  border-bottom-right-radius: 20% 5%;
+  padding:9.6875rem 1rem 2rem 1rem;
+  background-color: var(--light-white);
+}
+
+.summary__reasons__title {
+  color: var(--dark-blue);
+  font-size: 1.75rem;
+  margin-block-start: 1.5rem;
+  margin-block-end: 1rem;
+  text-align: center;
+}
+
+.summary__reasons__parapgraph {
+  margin-block-end: 2.5rem;
+  text-align: center;
+}
+
+
+.founder__image {
+  max-height:281px;
+  max-width: 281px;
+  margin: 0 auto;
+  margin-block-start: 7.46rem;
+}
+
+.founder__section {
+  background-color: #24053E;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding:2rem;
+  margin:-3.4375rem 1rem 4.63rem 1rem;
+}
+
+.title__founder__section{
+  font-family:'Fraunces', serif;
+  color:var(--white);
+}
+
+.text__founder__section{
+  color:var(--white);
+  line-height: 1.75;
+  margin-block-start: 1rem ;
+  margin-block-end: 1.5rem ;
+}
+
+.button__3{
+  min-width: 8.3125rem;
+  background-color: var(--eucalyptus);
+  color: var(--dark-blue);
+  font-weight: bold;
+  margin: 0 auto;
+  padding:0.6875rem 1.5rem;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:4rem;
+}
+
+.flex__footer__socials {
+  display: flex;
+  justify-content: center;
+  gap:1.5rem;
+  margin-block-end: 4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
